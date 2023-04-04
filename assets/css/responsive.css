@@ -1,0 +1,137 @@
+@media only screen and (max-width:992px){
+    .container{
+        max-width: 950px;
+    }
+    
+    .section-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .body-text .text2 {
+        margin: 0 0 20px;
+    }
+
+    .section-body article{
+        margin-bottom: 40px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .container{
+        max-width: 580px;
+        margin: auto;
+    }
+    header nav ul {
+        display: none;
+    }
+    header .bars{
+        display: block;
+        margin-right: 30px;
+    }
+
+    header .bars i{
+        font-size: 25px;
+    }
+
+    header .bars i{
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:576px) {
+    .container {
+        max-width: 210px;
+    }
+
+    header nav img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* header nav div a {
+        font: bold 17px var(--mainFont);
+        text-decoration: none;
+        margin: 15px;
+        color: black;
+    } */
+
+    .part2 div h3 {
+        font: bold 14px var(--mainFont);
+        color: #4c8bff;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .part2 div h1 {
+        font: bold 30px var(--mainFont);
+        color: black;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .part2-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part2-body article {
+        margin-bottom: 20px;
+    }
+
+
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 250px;
+        height: 225vh;
+        border: 2px solid black;
+        box-shadow: 2px 0 5px 2px gray;
+        animation-name: nav;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        display: none;
+        background-color: white;
+    }
+
+   
+    
+    @keyframes nav {
+        from {
+            left: -300px;
+        }
+    
+        to {
+            left: 0;
+        }
+    }
+    
+    .menu ul {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    
+    .menu ul li a {
+        margin: 20px;
+        font: bold 20px;
+        color: black;
+    }
+    
+    .menu.active{
+        display: block;
+    }
+}
+
+
+
+
+
